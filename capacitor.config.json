@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "crud-with-idb",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

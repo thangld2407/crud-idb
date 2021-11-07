@@ -1,0 +1,7 @@
+{
+  "name": "crud-with-idb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
