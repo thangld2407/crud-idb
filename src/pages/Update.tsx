@@ -33,7 +33,7 @@ function convertDate(date: string) {
   const newDate = new Date(date);
   const year = newDate.getFullYear();
   const month = (newDate.getMonth() + 1);
-  const day = newDate.getDay();
+  const day = newDate.getDate();
 
 
   return formatDateEYearMonthDay(year, month, day);
@@ -50,7 +50,7 @@ function formatDateEYearMonthDay(year: number, month: number, date: number) {
 function validateForm(Form: any) {
   const properties = ['Flat', 'House', 'Bungalow'];
   const bedrooms = ['Studio', 'One', 'Two'];
-  const furnished = ['Furnished', 'PartFurnished', 'Unfurnished'];
+  const furnished = ['Furnished', 'PartFunished', 'Unfurnished'];
 
   let isValidated = [];
 
@@ -221,7 +221,7 @@ const Update: React.FC = () => {
             <IonLabel position="floating">Furniture Type</IonLabel>
             <IonSelect value={furnished} onIonChange={e => setFurnished(e.detail.value)} >
               <IonSelectOption value="Furnished">Furnished</IonSelectOption>
-              <IonSelectOption value="PartFurnished">Part Furnished</IonSelectOption>
+              <IonSelectOption value="PartFunished">Part Furnished</IonSelectOption>
               <IonSelectOption value="Unfurnished">Unfurnished</IonSelectOption>
             </IonSelect>
           </IonItem>

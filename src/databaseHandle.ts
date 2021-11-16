@@ -41,7 +41,7 @@ export async function updateRoom(newRoom: any, id: number) {
     room.notes = newRoom.notes;
     room.reporter = newRoom.reporter;
 
-    await db.put('room', room)
+    await db.put(DATABASE_NAME, room)
         .then(() => {
             console.log("udpate susccessfully");
             console.log(room);
